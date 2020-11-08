@@ -1,0 +1,75 @@
+@each $stt, $bg-color in (1, #3C4C5C)(2,#5E5E5E)(3,#14409A)(4,#C0BAB5)(5,#5C5C5C)(6,#33569C){
+    #img-#{$stt}{
+        background: linear-gradient(#bbbdc0, $color-gray,  $color-gray);
+    } 
+    .vehicle__product:hover > #img-#{$stt}{
+background: linear-gradient( $bg-color, $color-gray, $color-gray);
+    }
+}
+
+@each $stt,$img in (1, banner-1) (2, banner-2) (3, banner-3) (4, banner-4){
+    #slick-slider{
+        .banner-#{$stt}{
+            background-image: url("../../img/#{$img}.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            outline: none;
+            @media screen  and (max-width: 768px){
+                background-image: url("../../img/#{$img}-xs.jpg");
+                height: 450px;
+                background-size: cover;
+                background-position: center;
+                outline: none;
+            }
+        }
+    }
+}
+
+@each $stt,$img in (1, slider-1) (2, slider-2) (3, slider-3) (4, slider-4) (5, slider-5){
+    .carousel-inner{   
+        .item-#{$stt}{
+            background-image: url("../../img/#{$img}.jpg");
+            background-size: cover;
+            background-position: center;
+            @media screen  and (max-width: 768px){
+                background-image: url("../../img/#{$img}-xs.jpg");
+                background-size: cover;
+                background-position: center;
+            
+            }
+
+            @media screen  and (max-width: 576px){
+                background-image: url("../../img/#{$img}-xs.jpg");
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}
+@each $stt,$img in (1, item-1) (2, item-2) (3, item-3) (4, item-4){
+        .function-#{$stt}{
+            background-image: url("../../img/#{$img}.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 120%;
+            background-color: $color-white;
+            @media screen  and (max-width: 1444px){
+                background-position: center 1rem;
+            
+            }
+        }
+    }
+    @each $stt,$img in (1, discover-1) (2, discover-2) (3, discover-3) (4, discover-4) (5, discover-5){
+        .discover-item-#{$stt}{
+            background-image: url("../../img/#{$img}.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+    }
+
+
+
+

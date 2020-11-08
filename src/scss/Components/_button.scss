@@ -1,0 +1,11 @@
+
+.button--blue{
+    @include styleButton($color-blue-200,$color-blue-200,$color-white,$pd-0, $pd-4, 
+    $mg-0, $mg-0, $color-blue-100, $color-white); 
+
+}
+.button--white{
+    @include styleButton($color-blue-200,$color-white,$color-blue-200,$pd-0, $pd-4, 
+    $mg-0, $mg-0, $color-blue-100, $color-white); 
+
+}

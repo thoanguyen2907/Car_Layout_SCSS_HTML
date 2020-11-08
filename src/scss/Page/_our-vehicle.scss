@@ -1,0 +1,553 @@
+#our-vehicles{
+    background-color: #f5f5f5;
+    padding: $pd-7 0; 
+.carousel {
+    height: 600px; 
+}
+.carousel-control-next, .carousel-control-prev{
+
+    top: 20% !important;
+}
+.carousel-inner, .carousel-item{
+    height: 100%; 
+}
+h1{
+        color: $color-blue-200; 
+        font-size: $font-size-3;
+        margin: $mg-4 auto;  }
+    #vehiclesIndicators{
+        .carousel-control-prev, .carousel-control-next{    
+            width: 10%;      
+                i {
+                    font-size:  $font-size-3 !important;
+            }
+        }
+    }
+    #vehiclesIndicators{
+        margin-top: $mg-5;
+        .carousel-indicators-config{
+       
+            li{
+                color: $color-dark-blue-200;
+                font-weight: $font-weight-bold;
+                font-size: $font-size-1; 
+                padding: $pd-0;
+                border-radius: 30px;
+                display: flex;                 
+                justify-content: center;
+                position: relative;
+
+                &.active{
+                   background-color: $color-blue-200;
+                   color: $color-white; 
+                  
+                   &::before{
+                    content: '';
+                    border-top: 25px solid $color-white;
+                    border-right: 25px solid transparent;
+                    border-left: 25px solid transparent;
+                    position: absolute;
+                    top: 70px;
+         
+                    right: unset;
+                    /* background-color: white; */
+                    z-index: 20;
+                }
+                }
+                }
+            
+        }
+    }
+    .carousel-inner{
+        .carousel-item{
+            position: relative;
+            height: 100%; 
+            .carousel-caption-config{
+                width: 35%;
+                position: absolute;
+                top: 5%;
+                left:5%;
+                color: white;
+                font-size: $font-size-1;
+                > p{
+                    font-weight: $font-weight-bold;
+                    span{
+                        font-weight: $font-weight-normal;
+                    }
+                }
+                img{
+                    width: 60%;
+                    transform: translateX($pd-2 * (-1));
+                }
+                .carousel-description{
+                    width: 75%;              
+                    text-align: justify;
+                    font-weight: $font-weight-300;
+                }
+                .carousel-caption-detail{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: $mg-0;
+                    .carousel-detail-content{
+                        h2{
+                            font-size: $font-size-3;
+                            font-weight: $font-weight-light;
+                            letter-spacing: 8px;
+                            margin-bottom: $mg-0;
+                        }
+                    }
+                }
+                .button__vehicle__active{
+                    @include styleButton($color-blue-200, $color-white,$color-blue-200,$pd-0, $pd-4,0, 0, $color-blue-200, $color-white); 
+                }
+                .button__vehicle{
+                    @include styleButton($color-blue-200,$color-blue-200,$color-white,$pd-0, $pd-4,0,$mg-1, $color-white, $color-blue-200); 
+                }
+            }
+            .carousel-caption-footer{
+                width: 50%;
+                position: absolute;
+                bottom: 0;
+                border-top: 1px solid #6ea5d4a4;
+                a{
+                    color: $color-white; 
+                    font-weight: $font-weight-bold;
+                }
+            }
+        }
+    }
+    #vehicle-function{
+        margin-top: 150px; 
+        padding: 0 $pd-6 ;
+        .pd-col{
+            padding: 0 6px !important; 
+        }
+        .function{           
+            height: 400px; 
+            position: relative;
+            padding: 0 20px;
+            margin: $mg-0 0; 
+            > div {
+            font-size: $font-size-1;
+            position: absolute;
+            top: 40%;
+            text-align: center;
+           
+            }
+                h3{
+                    color: $color-dark-blue-200; 
+                    font-weight: $font-weight-bold;    
+                }
+                p {
+                    color: $color-dark-blue-100; 
+                    font-weight:  $font-weight-300;
+                    padding: 0 $pd-5;
+                }
+                button{
+                    @include styleButton($color-blue-200,$color-blue-200,$color-white,$pd-0, $pd-5,$mg-0,0, $color-white, $color-blue-200); 
+                
+                }
+        }
+    }   
+  
+
+}
+@media screen and (max-width: 576px){
+    #our-vehicles{
+        position: relative;
+        .carousel-inner{
+            .carousel-item{
+                > img {
+                    width: 100%; 
+                }
+                .carousel-caption-footer{
+                    border-top: none;
+                    width: 100%;
+                    bottom: 3% !important; 
+                }
+                .carousel-caption-config{
+                    width: 90% !important; 
+                    text-align: center;
+                    margin: 0 auto;
+                    left: 5%;
+                    top: 45% !important;
+                    font-size: 1rem;
+                    img{
+                        width: 60%;
+                        height: 100%; 
+                        transform: translateX($pd-2 * (-1));
+                    }
+                    .carousel-caption-detail{
+                    
+                        .carousel-detail-content{
+                            h2{
+                                font-size: $font-size-2;
+                                font-weight: $font-weight-light;
+                                letter-spacing: 4px;
+                                margin-bottom: $mg-0;
+                            }
+                        }
+                    }
+                    .button__vehicle__active{
+                        @include styleButton($color-blue-200, $color-white,$color-blue-200,$pd-0, $pd-1,0, 0, $color-blue-200, $color-white); 
+                        font-size: 1rem;
+                    }
+                    .button__vehicle{
+                        @include styleButton($color-blue-200,$color-blue-200,$color-white,$pd-0, $pd-1,0,$mg-1, $color-white, $color-blue-200); 
+                        font-size: 1rem;
+                    }
+                }
+                .carousel-caption-footer{
+                    border-top: none;
+                    width: 100%;
+                    bottom: 3%; 
+                }
+            }
+        }
+        .dropdown-config{
+            text-align: center !important;
+            z-index: 3 !important;
+            position: absolute !important;
+            top: -5%;
+            width: 100%;
+            .dropdown-menu-config{
+                width: 60%;
+                ol {
+                    width: 100%;
+                    li {
+                        font-size: 1rem !important; 
+                       &::before{
+                           display: none;
+                       }
+                    }
+                }
+                &.show{
+                    transform: translate3d(100px, 63px, 0px);
+                }
+            }
+            .dropdown-toggle-config{
+                width: 60%;
+                padding: 20px 40px !important;
+                color: $color-blue-200
+            }
+        
+        }
+       
+        .carousel-indicators-xs{
+           width: 60%;
+           margin: 0 auto;
+           background-color: white; 
+           border: $border-1; 
+           position: absolute;
+           z-index: 10;
+           left: 22% !important; 
+           top: -10%;
+           .carousel-indicators-xs-title{
+            border-bottom: $border-1;
+
+            h6{
+                font-size: 1rem !important;
+                margin: $mg-0; 
+                color: $color-blue-200 !important;
+                font-weight: $font-weight-300;
+                padding: $pd-2 $pd-1;
+                margin: 0; 
+               
+                span{
+                    font-weight: $font-weight-bold !important;
+                    color: $color-dark-blue-200 !important;
+                }
+            }
+            i {
+                font-size: $font-size-2; 
+                color: $color-blue-200; 
+                margin-right: $mg-2; 
+                transition: all 0.3s ease;
+            }
+           }
+           
+          ol{
+              padding: 0;
+              margin:0; 
+              list-style: none;
+              display: none;
+              li{
+                padding: $pd-1 $pd-1;
+                color: $color-blue-200; 
+                font-weight: $font-weight-bold; 
+
+              }
+          }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    #our-vehicles{
+        position: relative;
+        .carousel-inner{
+            .carousel-item{
+                > img {
+                    width: 100%; 
+                }
+                .carousel-caption-config{
+                    width: 90% !important;
+                    text-align: center;
+                    margin: 0 auto;
+                    left: 5%;
+                    top: 45% !important;
+                    font-size: 1rem;
+                    img{
+                        width: 60%;
+                        height: 100%; 
+                        transform: translateX($pd-2 * (-1));
+                    }
+                    .carousel-caption-detail{
+                    
+                        .carousel-detail-content{
+                            h2{
+                                font-size: $font-size-2;
+                                font-weight: $font-weight-light;
+                                letter-spacing: 4px;
+                                margin-bottom: $mg-0;
+                            }
+                        }
+                    }
+                    .button__vehicle__active{
+                        @include styleButton($color-blue-200, $color-white,$color-blue-200,$pd-0, $pd-1,0, 0, $color-blue-200, $color-white); 
+                        font-size: 1rem;
+                    }
+                    .button__vehicle{
+                        @include styleButton($color-blue-200,$color-blue-200,$color-white,$pd-0, $pd-1,0,$mg-1, $color-white, $color-blue-200); 
+                        font-size: 1rem;
+                    }
+                }
+                .carousel-caption-footer{
+                    border-top: none;
+                    width: 100%;
+                    bottom: 5%; 
+                }
+            }
+        }
+        .dropdown-config{
+            text-align: center !important;
+            z-index: 3 !important;
+            position: absolute !important;
+            top: -5%;
+            width: 100%;
+            .dropdown-menu-config{
+                width: 60%;
+                ol {
+                    width: 100%;
+                    li {
+                        font-size: 1rem !important; 
+                       &::before{
+                           display: none;
+                       }
+                    }
+                }
+                &.show{
+                    transform: translate3d(100px, 63px, 0px);
+                }
+            }
+            .dropdown-toggle-config{
+                width: 60%;
+                padding: 20px 40px !important;
+                color: $color-blue-200
+            }
+        
+        }
+       
+        .carousel-indicators-xs{
+           width: 60%;
+           margin: 0 auto;
+           background-color: white; 
+           border: $border-1; 
+           position: absolute;
+           z-index: 10;
+           left: 22% !important; 
+           top: -10%;
+           .carousel-indicators-xs-title{
+            border-bottom: $border-1;
+
+            h6{
+                font-size: 1rem !important;
+                margin: $mg-0; 
+                color: $color-blue-200 !important;
+                font-weight: $font-weight-300;
+                padding: $pd-2 $pd-1;
+                margin: 0; 
+               
+                span{
+                    font-weight: $font-weight-bold !important;
+                    color: $color-dark-blue-200 !important;
+                }
+            }
+            i {
+                font-size: $font-size-2; 
+                color: $color-blue-200; 
+                margin-right: $mg-2; 
+                transition: all 0.3s ease;
+            }
+           }
+           
+          ol{
+              padding: 0;
+              margin:0; 
+              list-style: none;
+              display: none;
+              li{
+                padding: $pd-1 $pd-1;
+                color: $color-blue-200; 
+                font-weight: $font-weight-bold; 
+
+              }
+          }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 992px){
+    #our-vehicles{
+        position: relative;
+        .carousel-indicators-config{
+         
+            ol {
+                li {
+                    padding: 5px $pd-0;
+                }
+            }
+        }
+        .carousel-inner{
+
+            .carousel-item{
+                > img {
+                    width: 100%; 
+                }
+                .carousel-caption-config{
+                    width: 40%;
+                    text-align: center;
+                    margin: 0 auto;
+                    left: 5%;
+                    top: 10%;
+                    font-size: 1rem;
+                    img{
+                        width: 60%;
+                        height: 100%; 
+                        transform: translateX($pd-2 * (-1));
+                    }
+                    .carousel-caption-detail{
+                    
+                        .carousel-detail-content{
+                            h2{
+                                font-size: $font-size-2 !important;
+                                font-weight: $font-weight-light;
+                                margin-bottom: $mg-0;                              
+                                letter-spacing: 4px;
+                                margin-bottom: $mg-0;
+                                    
+                                
+                            }
+                        }
+                    }
+                    .button__vehicle__active{
+                        @include styleButton($color-blue-200, $color-white,$color-blue-200,$pd-0, $pd-1,0, 0, $color-blue-200, $color-white); 
+                        font-size: 1rem;
+                    }
+                    .button__vehicle{
+                        @include styleButton($color-blue-200,$color-blue-200,$color-white,$pd-0, $pd-1,0,$mg-1, $color-white, $color-blue-200); 
+                        font-size: 1rem;
+                    }
+                }
+                .carousel-caption-footer{
+                    border-top: none;
+                    width: 50%;
+                    bottom: 10%; 
+                }
+            }
+        }
+        .function{           
+            > div {
+            top: 40% !important;
+            }
+        } 
+       
+    }
+    
+}
+@media screen and (max-width: 1224px){
+    .function{           
+        > div {
+        top: 30% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1450px){
+    #our-vehicles{
+        position: relative;
+        .carousel-indicators-config{
+           
+            ol {
+                li {
+                    padding: 5px $pd-0;
+                }
+            }
+        }
+        .carousel-inner{
+
+            .carousel-item{
+                > img {
+                    width: 100%; 
+                }
+                .carousel-caption-config{
+                    text-align: center;
+                    margin: 0 auto;
+                    left: 5%;
+                    top: 10%;
+                    font-size: 1rem;
+                    width: 40%;
+                    img{
+                        width: 60%;
+                        height: 100%; 
+                        transform: translateX($pd-2 * (-1));
+                    }
+                    .carousel-caption-detail{
+                    
+                        .carousel-detail-content{
+                            h2{
+                                font-size: $font-size-3;
+                                font-weight: $font-weight-light;
+                                margin-bottom: $mg-0;                              
+                                letter-spacing: 4px;
+                                margin-bottom: $mg-0;
+                                    
+                                
+                            }
+                        }
+                    }
+                    .button__vehicle__active{
+                        @include styleButton($color-blue-200, $color-white,$color-blue-200,$pd-0, $pd-4,0, 0, $color-blue-200, $color-white); 
+                        font-size: 1rem;
+                    }
+                    .button__vehicle{
+                        @include styleButton($color-blue-200,$color-blue-200,$color-white,$pd-0, $pd-4,0,$mg-1, $color-white, $color-blue-200); 
+                        font-size: 1rem;
+                    }
+                }
+                .carousel-caption-footer{
+                    border-top: none;
+                    width: 50%;
+                    bottom:0; 
+                }
+            }
+        }
+       
+    }
+    
+}
+.transform-rotate{
+    transform: rotate(180deg);
+}

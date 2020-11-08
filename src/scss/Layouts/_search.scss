@@ -1,0 +1,206 @@
+#search-area, .search-field{
+    background-color:  $color-gray;
+    padding: $pd-1 $pd-6; 
+    position: relative;
+    i {
+        font-size: $font-size-1;
+        color: $color-blue-200; 
+    }
+    input {
+        width: 89% ;
+        height: 2.2rem; 
+        border:none; 
+        background-color: transparent;
+        outline: none;
+        padding: 0 $pd-0;
+        font-size: $font-size-2;
+        color: $color-blue-200;
+        font-weight: $font-weight-300;
+       
+        &::placeholder{
+            font-size: $font-size-2;
+            
+        }
+    }
+    .button__search{
+        @include styleButton($color-blue-200,transparent,$color-blue-100,$pd-0, $pd-6,$mg-0,0, $color-blue-200, $color-white); 
+    } 
+    &::before{
+        @include arrow(unset, 1%); 
+        background-color: transparent;
+    }
+}
+@media screen and (max-width: 576px){
+    #search-area-xs{
+        background-color:  $color-blue-100;
+        padding: $pd-1; 
+        i {
+            color: $color-white; 
+        }
+        &::before{
+            display: none;
+         }
+        input {
+            width: 72% ;
+            height: 2rem; 
+            padding: 0 $pd-0;
+            font-size: $font-size-1;
+            color: $color-blue-100;
+            background-color: $color-white;
+           
+            &::placeholder{
+                font-size: $font-size-1;
+                color: $color-white;
+            }
+        }
+        .button__search{
+            @include styleButton($color-white,transparent,$color-white,5px, 5px,$mg-0,0,$color-blue-200, $color-white); 
+            margin-left: $mg-1; 
+
+        } 
+    }
+}
+@media screen and (max-width: 992px){
+    #search-area-xs{
+        background-color:  $color-blue-100;
+        padding: $pd-1; 
+        i {
+            color: $color-white; 
+            margin-right: 5px; 
+        }
+        &::before{
+            display: none;
+         }
+        input {
+            width: 85% ;
+            height: 2.2rem; 
+            padding: 0 $pd-0;
+            font-size: $font-size-1;
+            color: $color-blue-100;
+            background-color: $color-white;
+           
+            &::placeholder{
+                font-size: $font-size-1;
+                color: $color-white;
+            }
+        }
+        .button__search{
+            @include styleButton($color-white,transparent,$color-white,$pd-0, $pd-0,$mg-0,0,$color-blue-200, $color-white); 
+            margin-left: $mg-1; 
+
+        } 
+    }
+}
+
+#search-field{
+    background-color: $color-white;
+    padding: 0 $pd-2;
+    div {
+       width: 85%;
+       border-right: $border-2;
+       padding: $pd-1 $pd-0;
+      input {
+          width: 80%;
+      }    
+    } 
+    p {
+        flex-grow: 1;
+        font-size: $font-size-1;
+        color: $color-blue-200; 
+        text-align: center;
+        margin: 0;
+        cursor: pointer;
+    }
+    &::before{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px){
+
+    #search-field{
+        background-color: $color-white;
+        padding: 0;
+        flex-wrap: wrap;
+        div {
+           width: 100% !important;
+           border-top: $border-2;
+          input {
+              width: 60% !important;
+              font-size: $font-size-1;
+          }  
+          .button--white{
+              padding: $pd-0 $pd-1;
+          }  
+        } 
+        p { 
+           text-align: center;
+            padding: $pd-2;
+        }
+        &::before{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    #search-field{
+        background-color: $color-white;
+        padding: 0;
+        flex-wrap: wrap;
+        div {
+           width: 100% !important;
+           border-top: $border-2;
+           padding: 0 $pd-0;
+          input {
+              width: 65%;
+              padding: 0 $pd-0;
+              font-size: $font-size-1;
+          }   
+          .button--white{
+            padding: $pd-0 $pd-1; } 
+        } 
+        p { 
+           text-align: center;
+            padding: $pd-2;
+        }
+        &::before{
+            display: none;        }     
+    }
+}
+
+@media screen and (max-width: 992px){
+    #search-field{
+        background-color: $color-white;
+        padding: 0;
+        flex-wrap: wrap;
+        div {
+           width: 75%;
+           padding: 0 $pd-0;
+          input {
+              width: 70%;
+              padding: 0 $pd-0;
+              font-size: $font-size-1;
+          }   
+        }
+        p { 
+           text-align: center;
+            padding: $pd-2;
+        }
+        &::before{
+            display: none;        }     
+    }
+}
+@media screen and (max-width: 1300px){
+    #search-field{
+        div {
+           width: 75%;
+           padding: 0 $pd-0;
+          input {
+              width: 70%;
+              padding: 0 $pd-0;
+              font-size: $font-size-1;
+          }   
+        }
+}
+}
+

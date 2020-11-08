@@ -1,0 +1,171 @@
+.navbar{
+    padding: 0;
+}
+#header{
+    background-color: $color-blue-100;  
+    .navbar{    
+       .navbar-brand{
+           padding: 0  $pd-3;
+           margin-right: 0;
+           border: 0;
+       }
+        a {
+            color: $color-white; 
+            padding: $pd-2  $pd-3; 
+            border-right: $border-1;
+            border-left: $border-1;
+            &.active{
+                background-color: $color-white; 
+                color:  $color-blue-100;
+            }
+        }
+        ul{
+                &.navbar-nav{
+                    margin-left: auto;
+                }
+            }
+        .no-border{
+            border:0 !important; 
+        }
+    }
+    .discover-menu{
+        left: unset; 
+        right: 0%; 
+        max-width: 500%;
+        padding: $pd-3; 
+        box-shadow: $box-shadow;
+        border: none; 
+        &::before{
+            @include arrow(unset, 10%); 
+        }
+        .dropdown-menu-detail{
+             display: flex;
+            > div{
+                width: 50%; 
+            }  
+            h3{
+                margin-bottom: $mg-2;
+                color:$color-dark-blue-200; 
+                font-weight: $font-weight-bold;
+            }        
+            .dropdown-detail-right{
+                padding-left: $pd-1;
+            }
+            ul{
+                list-style: none;
+                padding: 0;
+                li{
+                    margin-bottom:  $mg-1;
+                    a {
+                        color: $color-blue-200; 
+                        border: none; 
+                        padding: 0;
+                        font-weight: $font-weight-bold;
+                        font-size: $font-size-1
+                    }
+                }
+            }
+         
+        }
+        .dropdown-item{
+            &:hover{
+                background-color: transparent ;
+            }
+        }
+        .dropdown-menu-social{
+            display: flex;
+            justify-content: space-around;
+            margin-top: $mg-3;
+            i {
+               @include social-icon; 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px){
+    #header{
+        #navbar{
+            > a {
+                padding: $pd-0 $pd-1; 
+                border-right: none;
+                display: flex;
+                justify-content: flex-start;
+
+            }           
+        }
+        #navbarNav{
+            border-top: $border-2 !important;
+            .discover-menu{
+                &::before{
+                    @include arrow(10%, unset !important);   
+                    top: 50.5px;  
+                }
+                .dropdown-menu-detail{
+                    ul {
+                        li {
+                            a {
+                                font-size: 1rem; ;
+                            }
+                        }
+                    }
+                } 
+            }
+        } 
+    }
+   
+}
+
+@media screen and (max-width: 768px){
+    #header{
+        #navbar{
+            > a {
+                padding: $pd-0 $pd-1; 
+                border-right: none;
+                display: flex;
+                justify-content: flex-start;
+
+            }
+
+            
+        }
+        #navbarNav{
+            border-top: $border-2 !important;
+            .discover-menu{
+                &::before{
+                    @include arrow(10%, unset !important);   
+                    top: 50.5px;  
+                }
+                
+            }
+        } 
+    }
+   
+}
+@media screen and (max-width: 992px){
+    #header{
+        #navbar{
+            > a {
+                padding: $pd-1 $pd-2;     
+            }
+            .nav-item .nav-link{
+                padding: $pd-1 $pd-2; 
+            }
+            a:first-child{
+                padding: 0 $pd-0;
+            }            
+        }
+        #navbarNav{
+            border-top: $border-2 !important;
+            .discover-menu{
+                &::before{
+                    @include arrow(10%, unset !important);   
+                    top: 50.5px;  
+                } 
+            }
+        } 
+    
+    }
+   
+}
+
