@@ -157,12 +157,12 @@
                 .vehicle__description__right{
                     text-align: right;
                     .button__vehicle__active{                   
-                        @include styleButton($color-blue-200, $color-white,$color-blue-200,$pd-0, $pd-7,$mg-0, 0, $color-blue-200, $color-white); 
+                        @include styleButton($color-blue-200, $color-white,$color-blue-200,$pd-0, $pd-5,$mg-0, 0, $color-blue-200, $color-white); 
                     }
                 }
                 .vehicle__description__left{
                     .button__vehicle{
-                        @include styleButton($color-blue-200,$color-blue-200,$color-white,$pd-0, $pd-6,$mg-0,0, $color-white, $color-blue-200); 
+                        @include styleButton($color-blue-200,$color-blue-200,$color-white,$pd-0, $pd-5,$mg-0,0, $color-white, $color-blue-200); 
                     }                                         
                 }
 
@@ -207,10 +207,21 @@
                     }   
             }
         }
-        .button__vehicle__active{
-                    
-            @include styleButton($color-blue-200, $color-white,$color-blue-200,$pd-0, $pd-1,$mg-0, 0, $color-blue-200, $color-white); 
-        }
+        .vehicle__product{
+            .vehicle__description{
+                .vehicle__description__left{
+                    .button__vehicle{
+                        @include styleButton($color-blue-200,$color-blue-200,$color-white,$pd-0, $pd-2,$mg-0,0, $color-white, $color-blue-200); 
+                    }                                         
+                }
+                .vehicle__description__right{
+                    text-align: right;
+                    .button__vehicle__active{                   
+                        @include styleButton($color-blue-200, $color-white,$color-blue-200,$pd-0, $pd-2,$mg-0, 0, $color-blue-200, $color-white); 
+                    }
+                }
+            }           
+        }  
     }
     }
 }
@@ -235,7 +246,21 @@
                     }   
             }
         }
-        
+        .vehicle__product{
+            .vehicle__description{
+                .vehicle__description__left{
+                    .button__vehicle{
+                        @include styleButton($color-blue-200,$color-blue-200,$color-white,$pd-0, $pd-1,$mg-0,0, $color-white, $color-blue-200); 
+                    }                                         
+                }
+                .vehicle__description__right{
+                    text-align: right;
+                    .button__vehicle__active{                   
+                        @include styleButton($color-blue-200, $color-white,$color-blue-200,$pd-0, $pd-1,$mg-0, 0, $color-blue-200, $color-white); 
+                    }
+                }
+            }           
+        }
     }
 }
 }
@@ -259,7 +284,21 @@
                     }   
             }
         }
-        
+        .vehicle__product{
+            .vehicle__description{
+                .vehicle__description__left{
+                    .button__vehicle{
+                        @include styleButton($color-blue-200,$color-blue-200,$color-white,$pd-0, $pd-2,$mg-0,0, $color-white, $color-blue-200); 
+                    }                                         
+                }
+                .vehicle__description__right{
+                    text-align: right;
+                    .button__vehicle__active{                   
+                        @include styleButton($color-blue-200, $color-white,$color-blue-200,$pd-0, $pd-2,$mg-0, 0, $color-blue-200, $color-white); 
+                    }
+                }
+            }           
+        }
     }
 }
 }

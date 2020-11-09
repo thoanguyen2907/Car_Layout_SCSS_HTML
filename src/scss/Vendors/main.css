@@ -490,7 +490,7 @@ html {
             background-color: #fff;
             color: #2198dc;
             font-weight: bold;
-            padding: 10px 60px;
+            padding: 10px 40px;
             margin: 10px 0;
             transition: all 0.3s ease;
             cursor: pointer; }
@@ -504,7 +504,7 @@ html {
           background-color: #2198dc;
           color: #fff;
           font-weight: bold;
-          padding: 10px 50px;
+          padding: 10px 40px;
           margin: 10px 0;
           transition: all 0.3s ease;
           cursor: pointer; }
@@ -535,20 +535,36 @@ html {
       #vehicle #vehicle__content .vehicle-nav ul li a {
         border-right: none !important;
         font-size: 1rem !important; }
-  #vehicle #vehicle__content .button__vehicle__active {
+  #vehicle #vehicle__content .vehicle__product .vehicle__description .vehicle__description__left .button__vehicle {
     border: 2px solid #2198dc;
     border-radius: 50px;
-    background-color: #fff;
-    color: #2198dc;
+    background-color: #2198dc;
+    color: #fff;
     font-weight: bold;
-    padding: 10px 15px;
+    padding: 10px 20px;
     margin: 10px 0;
     transition: all 0.3s ease;
     cursor: pointer; }
-    #vehicle #vehicle__content .button__vehicle__active:hover {
-      background-color: #2198dc;
-      color: #fff;
-      cursor: pointer; } }
+    #vehicle #vehicle__content .vehicle__product .vehicle__description .vehicle__description__left .button__vehicle:hover {
+      background-color: #fff;
+      color: #2198dc;
+      cursor: pointer; }
+  #vehicle #vehicle__content .vehicle__product .vehicle__description .vehicle__description__right {
+    text-align: right; }
+    #vehicle #vehicle__content .vehicle__product .vehicle__description .vehicle__description__right .button__vehicle__active {
+      border: 2px solid #2198dc;
+      border-radius: 50px;
+      background-color: #fff;
+      color: #2198dc;
+      font-weight: bold;
+      padding: 10px 20px;
+      margin: 10px 0;
+      transition: all 0.3s ease;
+      cursor: pointer; }
+      #vehicle #vehicle__content .vehicle__product .vehicle__description .vehicle__description__right .button__vehicle__active:hover {
+        background-color: #2198dc;
+        color: #fff;
+        cursor: pointer; } }
 @media screen and (max-width: 992px) {
   #vehicle #vehicle__content .vehicle-nav ul {
     margin: 0 auto;
@@ -559,7 +575,37 @@ html {
       margin-bottom: 15px; }
       #vehicle #vehicle__content .vehicle-nav ul li a {
         border-right: none !important;
-        font-size: 1rem !important; } }
+        font-size: 1rem !important; }
+  #vehicle #vehicle__content .vehicle__product .vehicle__description .vehicle__description__left .button__vehicle {
+    border: 2px solid #2198dc;
+    border-radius: 50px;
+    background-color: #2198dc;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+    cursor: pointer; }
+    #vehicle #vehicle__content .vehicle__product .vehicle__description .vehicle__description__left .button__vehicle:hover {
+      background-color: #fff;
+      color: #2198dc;
+      cursor: pointer; }
+  #vehicle #vehicle__content .vehicle__product .vehicle__description .vehicle__description__right {
+    text-align: right; }
+    #vehicle #vehicle__content .vehicle__product .vehicle__description .vehicle__description__right .button__vehicle__active {
+      border: 2px solid #2198dc;
+      border-radius: 50px;
+      background-color: #fff;
+      color: #2198dc;
+      font-weight: bold;
+      padding: 10px 15px;
+      margin: 10px 0;
+      transition: all 0.3s ease;
+      cursor: pointer; }
+      #vehicle #vehicle__content .vehicle__product .vehicle__description .vehicle__description__right .button__vehicle__active:hover {
+        background-color: #2198dc;
+        color: #fff;
+        cursor: pointer; } }
 @media screen and (max-width: 1500px) {
   #vehicle #vehicle__content .vehicle-nav ul {
     margin: 0 auto;
@@ -571,7 +617,37 @@ html {
       margin-bottom: 15px; }
       #vehicle #vehicle__content .vehicle-nav ul li a {
         border-right: none !important;
-        font-size: 1.2rem !important; } }
+        font-size: 1.2rem !important; }
+  #vehicle #vehicle__content .vehicle__product .vehicle__description .vehicle__description__left .button__vehicle {
+    border: 2px solid #2198dc;
+    border-radius: 50px;
+    background-color: #2198dc;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+    cursor: pointer; }
+    #vehicle #vehicle__content .vehicle__product .vehicle__description .vehicle__description__left .button__vehicle:hover {
+      background-color: #fff;
+      color: #2198dc;
+      cursor: pointer; }
+  #vehicle #vehicle__content .vehicle__product .vehicle__description .vehicle__description__right {
+    text-align: right; }
+    #vehicle #vehicle__content .vehicle__product .vehicle__description .vehicle__description__right .button__vehicle__active {
+      border: 2px solid #2198dc;
+      border-radius: 50px;
+      background-color: #fff;
+      color: #2198dc;
+      font-weight: bold;
+      padding: 10px 20px;
+      margin: 10px 0;
+      transition: all 0.3s ease;
+      cursor: pointer; }
+      #vehicle #vehicle__content .vehicle__product .vehicle__description .vehicle__description__right .button__vehicle__active:hover {
+        background-color: #2198dc;
+        color: #fff;
+        cursor: pointer; } }
 #search-area, .search-field {
   background-color: #f6f6f6;
   padding: 15px 50px;
