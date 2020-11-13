@@ -12,6 +12,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="./WOW/css/libs/animate.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
     <link rel="stylesheet"
@@ -645,7 +647,7 @@
     <section  class="intro">
       <div class="container-fluid intro-container">
           <div class="row">
-            <div class="col-sm-12 col-lg-6 intro-left">
+            <div class="col-sm-12 col-lg-6 intro-left wow slideInLeft" data-wow-duration="1s" data-wow-delay="2">
               <div class="intro-left-content">
                 <h4>Future Vehicles</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique excepturi optio dicta repellendus impedit, cum tempore ipsam provident iure aperiam.</p>
@@ -653,7 +655,7 @@
               </div>
                
               </div>
-            <div class="col-sm-12 col-lg-6 intro-right">
+            <div class="col-sm-12 col-lg-6 intro-right wow slideInRight" data-wow-duration="1s" data-wow-delay="2">
               <div class="intro-right-content">
                 <h4>BUILD & PRICE</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae!</p>
@@ -665,7 +667,7 @@
       </div>
     </section>
     <section id="our-vehicles">
-      <h1 class="display-1 text-center">Our Vehicles</h1>
+      <h1 class="display-1 text-center wow animate__zoomIn">Our Vehicles</h1>
       <div id="vehiclesIndicators" class="carousel justify-content-center" data-ride="carousel">
       
         <div class="carousel-indicators-xs d-block d-md-none mt-4">
@@ -828,7 +830,7 @@
           <i class="fa fa-angle-right"></i>
         </a>
       </div>
-      <div id="vehicle-function">
+      <div id="vehicle-function" class="wow animate__slideInLeft" data-wow-duration="1.5s">
         <div class="row">
           <div class="col-lg-3 col-sm-6 col-xs-12 pd-col">
             <div class="function function-1">
@@ -876,7 +878,7 @@
       </div>
     </section>
     <section class="intro vehicle">
-        <div class="intro-container">
+        <div class="intro-container wow animate__slideInRight"  data-wow-duration="1.5s">
             <div class="row">
               <div class="col-sm-12 col-lg-6 intro-left intro-left-1">
                 <div class="intro-left-content">
@@ -901,8 +903,8 @@
     <section id="discover" class="discover">
       <div class="row">
         <div class="col-12 discover-title">
-          <h1 class="display-3">Discovery Honda</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, qui.</p>
+          <h1 class="display-3 wow animate__fadeInDown">Discovery Honda</h1>
+          <p class="wow animate__fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, qui.</p>
         </div>     
       </div>
       <div class="row">
@@ -915,7 +917,7 @@
             </div>        
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-sm-12 col-md-6 col-lg-4 wow animate__fadeInUp">
           <div class="discover-item discover-item-2">
             <div class="discover-item-content">
               <h2>Lorem ipsum dolor sit.</h2>
@@ -924,7 +926,7 @@
             </div>        
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-sm-12 col-md-6 col-lg-4 wow animate__fadeInUp deylay-1">
           <div class="discover-item discover-item-3">
             <div class="discover-item-content">
               <h2>Lorem ipsum dolor sit.</h2>
@@ -933,7 +935,7 @@
             </div>        
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-sm-12 col-md-6 col-lg-4 wow animate__fadeInUp deylay-2">
           <div class="discover-item discover-item-4">
             <div class="discover-item-content">
               <h2>Lorem ipsum dolor sit.</h2>
@@ -942,7 +944,7 @@
             </div>        
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-sm-12 col-md-6 col-lg-4 wow animate__fadeInUp deylay-3">
           <div class="discover-item discover-item-5">
             <div class="discover-item-content">
               <h2>Lorem ipsum dolor sit.</h2>
@@ -951,7 +953,7 @@
             </div>        
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-sm-12 col-md-6 col-lg-4 wow animate__fadeInUp deylay-4">
           <div class="discover-item discover-item-6">
             <i class="fab fa-twitter"></i>
             <div class="discover-item-twitter">
@@ -1155,170 +1157,9 @@
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="crossorigin="anonymous"></script>
-    <script src="./scrollBar/jquery.mCustomScrollbar.concat.min.js"></script>
-
-    <script>
-        $("#vehicle__list").mCustomScrollbar({
-           theme:"dark"}); 
-        function move(value){
-          $("#vehicle__list").mCustomScrollbar("scrollTo",value,{
-            scrollEasing: "easeOut"
-          });
-        }
-        $(".vehicle-nav ul li a").click(function(){
-          if($(this).attr("id")==="cars-nav"){
-            move("#cars-sedan")
-          } 
-          if($(this).attr("id")==="suvs-nav"){
-            move("#cars-minivan")
-          } 
-        });
-        let count = "";        
-        $("#navbar > a").click(function(){
-          if(count===""){
-            count = $(this).attr("id");
-            $(this).addClass("active"); 
-            if(count=== "vehicle__nav"){ //cho hiện ra vehicle__list - animation và sau đó xoá animation 
-              $("#vehicle").removeClass("hide__vehicle"); 
-              $(".vehicle-nav").addClass("animate__animated animate__fadeInDown"); 
-              $("#vehicle__list").addClass("animate__animated animate__fadeInUp"); 
-              $("#vehicle__close").addClass("animate__animated animate__zoomIn animate__delay-1s")
-              setTimeout(()=>{
-                $(".vehicle-nav").removeClass("animate__animated animate__fadeInDown"); 
-              $("#vehicle__list").removeClass("animate__animated animate__fadeInUp"); 
-              $("#vehicle__close").removeClass("animate__animated animate__zoomIn animate__delay-1s")
-              }, 3000)
-            }
-          } else {
-            if(count === $(this).attr("id")){ // nếu click lại id active lần nữa 
-              $(this).removeClass("active"); //remove class active 
-              count=""; // reset lại biến count 
-              $(".vehicle-nav").addClass("animate__animated animate__fadeOutUp");  //ẩn vehicle list và nav 
-              $("#vehicle__list").addClass("animate__animated animate__fadeOutDown"); 
-              setTimeout(function(){
-                $("#vehicle").addClass("hide__vehicle"); //add lại hideclass
-                $(".vehicle-nav").removeClass("animate__animated animate__fadeOutUp"); //xoá class hiệu ứng fade 
-                $("#vehicle__list").removeClass("animate__animated animate__fadeOutDown"); 
-              }, 300)                      
-            } else { //nếu click vào ô menu li  khác
-              $("#navbar > a").removeClass("active"); //xoá toàn bộ class active trong tất cả thẻ a
-              $(this).addClass("active"); //add class active đang click 
-              count = $(this).attr("id"); //gắn id cho biến count 
-              if(count !== "vehicle__nav"){
-                $(".vehicle-nav").addClass("animate__animated animate__fadeOutUp"); 
-                $("#vehicle__list").addClass("animate__animated animate__fadeOutDown"); 
-                setTimeout(function(){
-                $("#vehicle").addClass("hide__vehicle"); 
-                $(".vehicle-nav").removeClass("animate__animated animate__fadeOutUp"); 
-                $("#vehicle__list").removeClass("animate__animated animate__fadeOutDown");                
-              }, 300);
-              } else if (count === "vehicle__nav"){
-                $("#vehicle").removeClass("hide__vehicle"); 
-                $(".vehicle-nav").addClass("animate__animated animate__fadeInDown");     
-                $("#vehicle__list").addClass("animate__animated animate__fadeInUp");        
-              }
-            }
-          }
-        });
-        $("#vehicle__close").click(function(){
-          $(".vehicle-nav").addClass("animate__animated animate__fadeOutUp"); 
-          $("#vehicle__list").addClass("animate__animated animate__fadeOutDown"); 
-          setTimeout(function(){
-              $("#vehicle").addClass("hide__vehicle"); 
-              $(".vehicle-nav").removeClass("animate__animated animate__fadeOutUp"); 
-                $("#vehicle__list").removeClass("animate__animated animate__fadeOutDown"); 
-              }, 300);
-              $("#navbar > a").removeClass("active"); //remove class active 
-              count="";  //reset lại biến count 
-        });
-        $(".vehicle-product").addClass("animate__animated animated fadeInUp"); 
-        $(".carousel-indicators-xs").click(function(){
-          $(".carousel-indicators-xs ol").slideToggle(); 
-          if($(".carousel-indicators-xs i").hasClass("transform-rotate")){
-            $(".carousel-indicators-xs i").removeClass("transform-rotate"); 
-          } else {
-            $(".carousel-indicators-xs i").addClass("transform-rotate"); 
-          }
-        }); 
-
-        $(".carousel-indicators-xs ol li").click(function(){
-          $('.carousel-indicators-xs-title span').html($(this).html());        
-        });
-
-        let counting = 0; 
-        $(".carousel-control-prev").click(function(){
-          $(".carousel-indicators-config li").removeClass("active"); 
-          if(counting== 0){
-            counting = 4; 
-          } else {
-            counting--; 
-          }
-          $(".carousel-indicators-config li").each(function(i){
-            if(i == counting){
-               $(this).addClass("active");  
-            }
-          })
-        });
-        $(".carousel-control-next").click(function(){
-          $(".carousel-indicators-config li").removeClass("active"); 
-          if(counting== 4){
-            counting = 0; 
-          } else {
-            counting++; 
-          }
-          $(".carousel-indicators-config li").each(function(i){
-            if(i == counting){
-               $(this).addClass("active");  
-               $('.carousel-indicators-xs-title span').html($(this).html());   
-            }
-          });     
-        });
-        $(".back-to-top").click(function(){
-            $("body, html").animate({scrollTop: 0}, 1000)
-          }); 
-          function collapse(){
-            let width = $(window).width(); 
-          if(width >= 768){
-            $(".collapse-ul").removeClass("collapse"); 
-          } else {
-            $(".collapse-ul").addClass("collapse"); 
-          }
-          }
-        $(window).resize(function(){
-          collapse(); 
-        }); 
-        $(document).ready(function(){
-          collapse(); 
-        });
-
-</script>
+  <script src="./scrollBar/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="./slickSlider/slick/slick.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('.slick-item').slick({
-      dots: true,
-      arrows: false,
-      autoplay: true,
-      draggable: true,
-      touchMove: true, 
-    });
-  });
-</script>
-<script>
-  let carouselOl = document.querySelector(".carousel-indicators-config")
-  let listOfLi = Array.from(carouselOl.getElementsByTagName("li")); 
- 
-  listOfLi.forEach((liEl, index )=>{
-    liEl.addEventListener("click", ()=>{
-      let currentLi = document.querySelector(".carousel-indicators-config li.active"); 
-      currentLi.className = currentLi.className.replace("active", ""); 
-      liEl.className += "active"; 
-    })
-  });
-
-</script>
-
-
-    <script src="./js/main.js"></script>
+<script src="./WOW/dist/wow.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
   </body>
 </html>

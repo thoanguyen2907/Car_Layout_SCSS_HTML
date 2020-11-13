@@ -127,6 +127,11 @@ h1{
             position: relative;
             padding: 0 20px;
             margin: $mg-0 0; 
+            cursor: pointer;
+            transition: all 0.4s ease;
+            &:hover{
+                transform: translateY($mg-1 * -1);
+            }
             > div {
             font-size: $font-size-1;
             position: absolute;
