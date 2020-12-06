@@ -11,8 +11,20 @@ $(document).ready(function(){
         move("#cars-sedan")
       } 
       if($(this).attr("id")==="suvs-nav"){
-        move("#cars-minivan")
+        move("#cars-suv")
       } 
+      if($(this).attr("id")==="minivan-nav"){
+        move("#cars-minivan")
+      }
+      if($(this).attr("id")==="environmental-nav"){
+        move("#cars-environmental")
+      }
+      if($(this).attr("id")==="environmental-nav"){
+        move("#cars-environmental")
+      }
+      if($(this).attr("id")==="future-nav"){
+        move("#cars-future")
+      }
     });
     let count = "";        
     $("#navbar > a").click(function(){
